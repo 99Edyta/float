@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Lokalpolitiker</title>
+    <!--ref til min egen stylesheet-->
+    <link rel="stylesheet" href="politikerstyle.css" />
+    <!-- ref til funawesomes stylesheet (så jeg kan bruge deres ikoner)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="lokalpolitiker.html">SOCIALDEMOKRATIET</a>
+        <img src="logo" class="logo" alt="logo" />
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="mig.html">Om mig</a>
+        <a href="#">Om partiet</a>
+        <a href="findos.html">Kontakt os her</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="wrapper">
+    <!-- Nu sætter vi et billede ind af kandidatten-->
+    <div class="container">
+      <div class="nina">
+        <img src="nina.jpg" class="nina" alt="nina" />
+        <div id="tekstboks" class="tekstboks">
+        <h2>Nina Strøm Tønnes
+        </h2>
+      <p>
+        Nina Strøm Tønnes, 51 år, Pædagog, bor Baldersbrønde/Hedehusene.
+Jeg er mor til to voksne børn. Jonas på 26 år, som pt. er udstationeret som speditør for DSV i Milano og Stina på 31 år som er jordemoder. Derudover er jeg også mormor til to fantastiske piger.
+     </div>
+     </div>
+    </p>
+    <div class="containertekst">
+     <div id="faktaboks" class="faktaboks">
+           <h2>Frihed, lighed og fællesskab</h2>
+          <p>
+           Igennem 150 år har Socialdemokratiet kæmpet for at skabe det Danmark, vi har i dag. Et land med frihed, lighed og fællesskab. Et land med sammenhængskraft, hvor vi har tillid til hinanden. Et land, der skaber gode rammer for et lykkeligt liv. Efter vores mening: Det bedste land i verden.
+
+Men vi er ikke i mål endnu. Vi står som samfund over for mange store udfordringer, der kræver politiske visioner, mod og handlekraft. 
+
+Her kan du blive klogere på, hvad Socialdemokratiet vil med Danmark.
+          </p>
+        </div>
+        <div id="Vores-vision" class="vores-vision">
+            <h2> Vores fællesskab skal sikre:</h2>
+      <p>
+Vuggestuer og børnehaver, hvor der er tid til nærvær og omsorg.
+En folkeskole, der giver alle børn gode rammer for at lære og udvikle sig.
+Trygge gader, stationer og boligområder.
+En værdig og omsorgsfuld ældrepleje, der hjælper os, når vi har brug for det.</p> 
+      </div>
+    </div>
+</div>
+    <!-- Javascript lånt fra W3Schools-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
