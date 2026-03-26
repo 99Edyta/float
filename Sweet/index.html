@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweetshop</title>
+    <link rel="stylesheet" href="Sweetshop.css" />
+  </head>
+  <body onload="startTime()">
+    <header>
+      <!-- Jeg laver et menu med undersider i headeren og tilføjer undersiderne-->
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="logo1" /></a>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#"> Om os</a>
+        <a href="udvalg.html"> Vores udvalg</a>
+        <a href="kontakt.html"> Kontakt</a>
+      </div>
+    </header>
+    <!-- Her indsætter jeg min klokke, som ligger under menuen -->
+    <div class="tid">
+      <div id="txt"></div>
+    </div>
+    <!--Jeg tilføjer en velkommen box på forsiden -->
+    <div class="velkommen">
+      <div>Velkommen til Københavns slikbutik</div>
+    </div>
+    <!--Her er der endnu en boks, som fortæller med udvalg osv.-->
+    <div class="tekst">
+      <p>
+        Hos Københavns slikbutik finder du et stort udvalg af slik og søde sager Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa,
+        voluptate! Amet, debitis corporis dignissimos id nisi impedit. Eos quis aliquid quibusdam quod ullam dolor voluptates ut, nobis praesentium.
+        Eius, dicta!
+      </p>
+    </div>
+    <!-- Jeg tilsætter Java Script åbningstider, som aktivt opdaterer om butikken er åben eller lukket-->
+    <div class="opening-slide">
+      <section class="opening-hours">
+        <h2>Åbningstider</h2>
+
+        <div id="status" class="status-box">
+          <p class="status-label">Status:</p>
+          <p id="shopStatus" class="status-text"></p>
+        </div>
+
+        <ul class="hours-list">
+          <li class="day-row" data-day="1" data-open="08" data-close="17">
+            <span class="day">Mandag</span>
+            <span class="time">08:00 - 17:00</span>
+          </li>
+
+          <li class="day-row" data-day="2" data-open="08" data-close="17">
+            <span class="day">Tirsdag</span>
+            <span class="time">08:00 - 17:00</span>
+          </li>
+
+          <li class="day-row" data-day="3" data-open="08" data-close="17">
+            <span class="day">Onsdag</span>
+            <span class="time">08:00 - 17:00</span>
+          </li>
+
+          <li class="day-row" data-day="4" data-open="08" data-close="17">
+            <span class="day">Torsdag</span>
+            <span class="time">08:00 - 17:00</span>
+          </li>
+
+          <li class="day-row" data-day="5" data-open="07" data-close="20">
+            <span class="day">Fredag</span>
+            <span class="time">07:00 - 20:00</span>
+          </li>
+
+          <li class="day-row" data-day="6" data-open="07" data-close="20">
+            <span class="day">Lørdag</span>
+            <span class="time">07:00 - 20:00</span>
+          </li>
+
+          <li class="day-row closed-day" data-day="0">
+            <span class="day">Søndag</span>
+            <span class="time">Lukket</span>
+          </li>
+        </ul>
+      </section>
+      <!--Her indsætter jeg mit slideshow, som vises ved åbningstiderne, og tilføjer pile frem og tilbage-->
+      <div class="slideshow-container">
+        <div class="slide">
+          <img src="maoam.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="vingummi.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="hjerter.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="mms.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="slik.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="candy.jpg" alt="slik" />
+        </div>
+        <div class="slide">
+          <img src="karameller.jpg" alt="slik" />
+        </div>
+
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
+    <!-- Her indsætter jeg lidt at butikkens udvalg-->
+    <div class="udvalg"><h1>Se vores udvalg her</h1></div>
+    <div class="slikudvalg-container">
+      <div class="kasse"><img src="candy.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="vingummi.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="mms.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="slik.jpg" alt="slik" /></div>
+    </div>
+    <div class="slikudvalg-container2">
+      <div class="kasse"><img src="slikkepinde.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="sødt.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="blandet.jpg" alt="slik" /></div>
+      <div class="kasse"><img src="ruller.jpg" alt="slik" /></div>
+    </div>
+    <footer>
+      <!-- Her indsætter jeg informationerne i footeren -->
+      <div class="footer">
+        <div>
+          <div class="aabning">
+            <ul>
+              Åbningstider
+              <li>Mandag-torsdag 8-17</li>
+              <li>Fredag-Lørdag 7-20</li>
+              <li>Søndag lukket</li>
+            </ul>
+          </div>
+          <div class="adresse">
+            <ul>
+              Adresse
+              <li>Slikgaden 44</li>
+              <li>2100 København</li>
+            </ul>
+          </div>
+          <div class="kontakt">
+            <ul>
+              Kontakt
+              <li>københavns@slikbutik.dk</li>
+              <li>50 91 74 44</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Her linker jeg til java scriptet -->
+    <script src="sweetshop.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweetshop</title>
+    <link rel="stylesheet" href="Sweetshop.css" />
+  </head>
+  <body onload="startTime()">
+    <header>
+      <!-- Jeg laver et menu med undersider i headeren og tilføjer undersiderne-->
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="logo" /></a>
+      </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#"> Om os</a>
+        <a href="udvalg.html"> Vores udvalg</a>
+        <a href="kontakt.html"> Kontakt</a>
+      </div>
+    </header>
+    <!-- Her indsætter jeg min klokke, som ligger under menuen -->
+    <div class="tid">
+      <div id="txt"></div>
+    </div>
+    <!--Jeg tilføjer en box hvor der står Kontakt of via kontakt formular -->
+    <div class="kontaktos">
+      <div>Kontakt os via kontaktformularen</div>
+    </div>
+    <!-- Her laver jeg en kontakt formular man kan udfylde og sende ind -->
+    <div class="formular">
+      <form id="contact-form" method="POST" action="sendmail.php">
+        <div class="form-row form-error" style="display: none"></div>
+        <div class="form-row">
+          <label for="contact-form-name">Navn:</label>
+          <input id="contact-form-name" class="form-input" type="text" name="name" required />
+        </div>
+        <div class="form-row">
+          <label for="contact-form-email">Email:</label>
+          <input id="contact-form-email" class="form-input" type="email" name="email" required />
+        </div>
+        <div class="form-row">
+          <label for="contact-form-phone">Telefon nr:</label>
+          <input id="contact-form-phone" class="form-input" type="tel" name="phone" />
+        </div>
+        <div class="form-row">
+          <label for="contact-form-message">Besked:</label>
+          <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
+        </div>
+        <div class="knap">
+          <button type="submit">Send</button>
+        </div>
+      </form>
+    </div>
+    <!-- Her indsætter jeg informationerne i footeren -->
+    <footer>
+      <div class="footer">
+        <div>
+          <div class="aabning">
+            <ul>
+              Åbningstider
+              <li>Mandag-torsdag 8-17</li>
+              <li>Fredag-Lørdag 7-20</li>
+              <li>Søndag lukket</li>
+            </ul>
+          </div>
+          <div class="adresse">
+            <ul>
+              Adresse
+              <li>Slikgaden 44</li>
+              <li>2100 København</li>
+            </ul>
+          </div>
+          <div class="kontakt">
+            <ul>
+              Kontakt
+              <li>københavns@slikbutik.dk</li>
+              <li>50 91 74 44</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="sweetshop.js"></script>
+  </body>
+</html>
