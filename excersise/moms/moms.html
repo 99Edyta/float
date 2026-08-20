@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momsberegner</title>
+  </head>
+  <body>
+    <main>
+      <h1>Momsberegner</h1>
+
+      <form id="momsForm">
+        <label for="beloeb">Beløb</label>
+        <input id="beloeb" name="beloeb" type="number" min="0" step="0.01" required />
+
+        <label for="moms">Moms i procent</label>
+        <input id="moms" name="moms" type="number" min="0" step="0.01" value="25" />
+
+        <button type="submit">Beregn</button>
+      </form>
+
+      <p>Beløb med moms: <output id="resultat" for="beloeb moms">-</output></p>
+    </main>
+
+    <script src="moms.js"></script>
+    <script>
+      document.getElementById("momsForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const beloeb = Number(document.getElementById("beloeb").value);
+        const moms = Number(document.getElementById("moms").value);
+        const resultat = beregnMedMoms(beloeb, moms);
+
+        document.getElementById("resultat").value = resultat.toFixed(2);
+      });
+    </script>
+  </body>
+</html>
