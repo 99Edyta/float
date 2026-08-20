@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omvent gæt et tal</title>
+    <link rel="stylesheet" href="omvent.css" />
+    <script src="omvent.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Her laver jeg en overskrift -->
+      <h1>Komputeren gætter tallet</h1>
+      <!--Her laver jeg en boks med beskrivelse af spillet-->
+      <div class="game-panel">
+        <p>Klar til at komputeren gætter dit tal?</p>
+        <p>Tænk på et tal mellem 1-100</p>
+        <!-- Her laver jeg en linie til komputerens gæt og vejledning til starten af spillet, at man skal trykke på start knappen -->
+        <section aria-live="polite">
+          <p>Computerens gæt:</p>
+          <strong id="guess">-</strong>
+          <p id="status">Tryk på start.</p>
+        </section>
+        <!-- Her kommer den anden boks med selve spillet -->
+        <div class="the-game">
+          <button id="start-button" type="button">Start spillet</button>
+          <div id="feedback-buttons">
+            <!-- her laver jeg knapperne til om komputerens tal er for lavt, højt eller rigtigt-->
+            <button data-answer="low" type="button" disabled>For lavt</button>
+            <button data-answer="correct" type="button" disabled>Rigtigt</button>
+            <button data-answer="high" type="button" disabled>For højt</button>
+          </div>
+          <!-- her kommer antallet af komputerens gæt-->
+          <p>Antal gæt: <strong id="attempts">0</strong></p>
+          <p id="message"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
